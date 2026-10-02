@@ -8,21 +8,21 @@ The application supports room creation and joining, real-time messaging, typing 
 
 ---
 
-## ✨ Features
+##  Features
 
-- 💬 Real-time messaging using WebSocket and STOMP
-- 🏠 Create and join chat rooms
-- 👥 View room members
-- 👑 Identify the room creator
-- ✍️ Real-time typing indicator
-- 📎 File sharing in chat
-- 🖼️ Image sharing and display
-- 🗑️ Clear room messages
-- 🚪 Leave a room
-- ❌ Delete a room
-- ☁️ MongoDB Atlas integration
-- 📦 MongoDB GridFS for file storage
-- 🔄 REST API + WebSocket communication
+-  Real-time messaging using WebSocket and STOMP
+-  Create and join chat rooms
+-  View room members
+-  Identify the room creator
+-  Real-time typing indicator
+-  File sharing in chat
+-  Image sharing and display
+-  Clear room messages
+-  Leave a room
+-  Delete a room
+-  MongoDB Atlas integration
+-  MongoDB GridFS for file storage
+-  REST API + WebSocket communication
 
 ---
 
@@ -40,7 +40,7 @@ The application supports room creation and joining, real-time messaging, typing 
 - MongoDB GridFS
 - Maven
 
-## 🏗️ Architecture
+##  Architecture
 
 ```text
                     ┌─────────────────────┐
