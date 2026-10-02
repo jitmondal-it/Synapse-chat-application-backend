@@ -2,6 +2,7 @@ package com.synapse.chat.chat_app_backend.controllers;
 
 
 import com.mongodb.client.gridfs.model.GridFSFile;
+import com.synapse.chat.chat_app_backend.config.AppConstants;
 import com.synapse.chat.chat_app_backend.entities.Message;
 import com.synapse.chat.chat_app_backend.entities.Room;
 import com.synapse.chat.chat_app_backend.repositories.RoomRepository;
@@ -23,7 +24,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/rooms")
-@CrossOrigin("http://localhost:5173")
+@CrossOrigin(AppConstants.FRONT_END_BASE_URL)
 public class RoomController {
 
     @Autowired
