@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -25,7 +26,7 @@ public class Message {
     private Message(String sender,String consent){
         this.sender = sender;
         this.content = consent;
-        this.timeStamp = LocalDateTime.now();
+        this.timeStamp = LocalDateTime.now(ZoneId.of("Asia/Kolkata"));
     }
 
 }

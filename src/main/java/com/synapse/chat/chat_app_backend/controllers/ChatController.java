@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 
 @Controller
 @CrossOrigin(AppConstants.FRONT_END_BASE_URL)
@@ -34,7 +35,7 @@ public class ChatController {
         Message message = new Message();
         message.setContent(request.getContent());
         message.setSender(request.getSender());
-        message.setTimeStamp(LocalDateTime.now());
+        message.setTimeStamp(LocalDateTime.now(ZoneId.of("Asia/Kolkata")));
         message.setMessageType(request.getMessageType());
         message.setFileId(request.getFileId());
         message.setFileName(request.getFileName());
